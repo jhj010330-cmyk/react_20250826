@@ -1,0 +1,95 @@
+Node.js® 다운로드
+Node.js® 
+v20.20.0 (LTS)
+를 
+Windows
+ 환경에서 
+Docker
+ 방식으로 
+npm
+를(을) 사용해 설치하세요.
+ES7 React/Redux/GraphQL/React-Native snippets
+Space2를 4로 변경
+
+
+npm -v(버전확인)
+npx -v
+npm install -g create-react-app
+npx create-react-app react(폴더이름)
+cd (폴더이름)
+npm i(nstall) (설치)
+npm start(golive역할)
+
+app.js
+index.js
+index.html
+rafce -> app.js(코딩하는곳)
+terminal 에서 ctrl + c
+y
+
+npm install sass(sass다운)
+npm install gsap(package.json에 추가됨)
+npm install react-router-dom
+npm start
+
+폴더 src안에
+components
+assets
+view폴더 만들기
+view폴더에 
+Homeview.jsx만들기(첫글자는 대문자)
+
+app.js에서
+import {} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+입력
+
+<Route path='/' element={<HomeView />}/>
+element에 연결 HomeView링크걸기
+터미널에서
+npm start
+
+components파일에 
+Contact.jsx
+Footer.jsx
+Header.jsx
+Intro.jsx
+Main.jsx
+Port.jsx
+Site.jsx
+Skill.jsx
+Skip.jsx
+생성
+
+HomeView에 연결
+ <>
+      <Skip />
+      <Header />
+      <Main>
+        <Intro />
+        <Skill />
+        <Site />
+        <Port />
+        <Contact />
+      </Main>
+      <Footer />
+</>
+import까지 확인후 입력
+
+scss에 style.scss만들고 setting,section 파일 연결
+//setting
+@import "./setting/_resct";
+@import "./setting/_vars";
+@import "./setting/font";
+@import "./setting/mixin";
+//section
+@import "./section/skip";
